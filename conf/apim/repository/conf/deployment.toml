@@ -63,6 +63,29 @@ ws_endpoint = "ws://localhost:9099"
 wss_endpoint = "wss://localhost:8099"
 http_endpoint = "http://localhost:${http.nio.port}"
 https_endpoint = "https://localhost:${https.nio.port}"
+[[apim.gateway.environment]]
+name = "Hologacao Gateway"
+type = "Hologacao"
+display_in_api_console = true
+description = "Hologacao Gateway Environment"
+show_as_token_endpoint_url = true
+service_url = "https://localhost:9444/services/"
+username= ""
+password= ""
+http_endpoint = "http://localhost:8281"
+https_endpoint = "https://localhost:8244"
+
+[[apim.gateway.environment]]
+name = "Desenvolvimento and Sandbox"
+type = "hybrid"
+display_in_api_console = true
+description = "Desenvolvimento Gateway Environment"
+show_as_token_endpoint_url = true
+service_url = "https://localhost:9445/services/"
+username= ""
+password= ""
+http_endpoint = "http://localhost:8282"
+https_endpoint = "https://localhost:8245"
 
 #[apim.cache.gateway_token]
 #enable = true
