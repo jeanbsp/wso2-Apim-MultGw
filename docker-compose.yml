@@ -59,9 +59,9 @@ services:
     volumes:
       - ./conf/apim-hm:/home/wso2carbon/wso2-config-volume
     ports:
-      - "9443:9444"
-      - "8280:8281"
-      - "8243:8244"
+      - "9444:9444"
+      - "8281:8281"
+      - "8244:8244"
     networks:
       - net
   api-manager-ds:
@@ -69,9 +69,9 @@ services:
     volumes:
       - ./conf/apim-ds:/home/wso2carbon/wso2-config-volume
     ports:
-      - "9443:9445"
-      - "8280:8282"
-      - "8243:8245"
+      - "9445:9445"
+      - "8282:8282"
+      - "8245:8245"
     networks:
       - net 
   am-analytics-dashboard:
