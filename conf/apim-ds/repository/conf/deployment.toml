@@ -1,5 +1,5 @@
 [server]
-hostname = "localhost"
+hostname = "wso2.local"
 node_ip = "192.168.0.88"
 offset=2
 mode = "single" #single or ha
@@ -56,21 +56,21 @@ type = "hybrid"
 display_in_api_console = true
 description = "This is a hybrid gateway that handles both production and sandbox token traffic."
 show_as_token_endpoint_url = true
-service_url = "https://localhost:${mgt.transport.https.port}/services/"
+service_url = "https://wso2.local:${mgt.transport.https.port}/services/"
 username= "${admin.username}"
 password= "${admin.password}"
 ws_endpoint = "ws://localhost:9099"
 wss_endpoint = "wss://localhost:8099"
-http_endpoint = "http://localhost:${http.nio.port}"
-https_endpoint = "https://localhost:${https.nio.port}"
+http_endpoint = "http://wso2.local:${http.nio.port}"
+https_endpoint = "https://wso2.local:${https.nio.port}"
 
 [apim.key_manager]
-service_url = "https://localhost:9443/services/"
+service_url = "https://wso2.local:9443/services/"
 username = ""
 password = ""
 
 [apim.oauth_config]
-revoke_endpoint = "https://localhost:8243/services/"
+revoke_endpoint = "https://wso2.local:8243/services/"
 
 #[apim.cache.gateway_token]
 #enable = true
