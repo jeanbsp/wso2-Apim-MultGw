@@ -70,8 +70,8 @@ display_in_api_console = true
 description = "Hologacao Gateway Environment"
 show_as_token_endpoint_url = true
 service_url = "https://wso2.local:9444/services/"
-username= ""
-password= ""
+username= "admin"
+password= "admin"
 http_endpoint = "http://wso2.local:8281"
 https_endpoint = "https://wso2.local:8244"
 
@@ -82,8 +82,8 @@ display_in_api_console = true
 description = "Desenvolvimento Gateway Environment"
 show_as_token_endpoint_url = true
 service_url = "https://wso2.local:9445/services/"
-username= ""
-password= ""
+username= "admin"
+password= "admin"
 http_endpoint = "http://wso2.local:8282"
 https_endpoint = "https://wso2.local:8245"
 
