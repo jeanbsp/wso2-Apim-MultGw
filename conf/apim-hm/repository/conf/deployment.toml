@@ -66,8 +66,8 @@ https_endpoint = "https://wso2.local:${https.nio.port}"
 
 [apim.key_manager]
 service_url = "https://wso2.local:9443/services/"
-username = ""
-password = ""
+username = "admin"
+password = "admin"
 
 [apim.oauth_config]
 revoke_endpoint = "https://wso2.local:8243/services/"
