@@ -1,5 +1,5 @@
 [server]
-hostname = "localhost"
+hostname = "wso2.local"
 node_ip = "192.168.0.88"
 #offset=0
 mode = "single" #single or ha
@@ -61,19 +61,19 @@ username= "${admin.username}"
 password= "${admin.password}"
 ws_endpoint = "ws://localhost:9099"
 wss_endpoint = "wss://localhost:8099"
-http_endpoint = "http://localhost:${http.nio.port}"
-https_endpoint = "https://localhost:${https.nio.port}"
+http_endpoint = "http://wso2.local:${http.nio.port}"
+https_endpoint = "https://wso2.local:${https.nio.port}"
 [[apim.gateway.environment]]
 name = "Hologacao Gateway"
 type = "Hologacao"
 display_in_api_console = true
 description = "Hologacao Gateway Environment"
 show_as_token_endpoint_url = true
-service_url = "https://localhost:9444/services/"
+service_url = "https://wso2.local:9444/services/"
 username= ""
 password= ""
-http_endpoint = "http://localhost:8281"
-https_endpoint = "https://localhost:8244"
+http_endpoint = "http://wso2.local:8281"
+https_endpoint = "https://wso2.local:8244"
 
 [[apim.gateway.environment]]
 name = "Desenvolvimento and Sandbox"
@@ -81,11 +81,11 @@ type = "hybrid"
 display_in_api_console = true
 description = "Desenvolvimento Gateway Environment"
 show_as_token_endpoint_url = true
-service_url = "https://localhost:9445/services/"
+service_url = "https://wso2.local:9445/services/"
 username= ""
 password= ""
-http_endpoint = "http://localhost:8282"
-https_endpoint = "https://localhost:8245"
+http_endpoint = "http://wso2.local:8282"
+https_endpoint = "https://wso2.local:8245"
 
 #[apim.cache.gateway_token]
 #enable = true
