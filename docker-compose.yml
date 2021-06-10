@@ -1,4 +1,4 @@
-version: '2.4'
+version: '3.7'
 
 networks:
   net:    
@@ -25,6 +25,8 @@ services:
       timeout: 60s
       retries: 5
       start_period: 80s
+    extra_hosts:
+      - "wso2.local:192.168.0.88"
     networks:
       - net    
   am-analytics-worker:
@@ -42,6 +44,8 @@ services:
         condition: service_healthy
     volumes:
       - ./conf/apim-analytics-worker:/home/wso2carbon/wso2-config-volume
+    extra_hosts:
+      - "wso2.local:192.168.0.88"
     networks:
       - net  
   api-manager:
@@ -52,6 +56,8 @@ services:
       - "9443:9443"
       - "8280:8280"
       - "8243:8243"
+    extra_hosts:
+      - "wso2.local:192.168.0.88"
     networks:
       - net   
   api-manager-hm:
@@ -62,6 +68,8 @@ services:
       - "9444:9444"
       - "8281:8281"
       - "8244:8244"
+    extra_hosts:
+      - "wso2.local:192.168.0.88"
     networks:
       - net
   api-manager-ds:
@@ -72,6 +80,8 @@ services:
       - "9445:9445"
       - "8282:8282"
       - "8245:8245"
+    extra_hosts:
+      - "wso2.local:192.168.0.88"
     networks:
       - net 
   am-analytics-dashboard:
@@ -88,5 +98,7 @@ services:
         condition: service_healthy
     volumes:
       - ./conf/apim-analytics-dashboard:/home/wso2carbon/wso2-config-volume
+    extra_hosts:
+      - "wso2.local:192.168.0.88"
     networks:
       - net
