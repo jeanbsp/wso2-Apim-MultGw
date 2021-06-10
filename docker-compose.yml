@@ -68,6 +68,26 @@ services:
       - "8243:8243"
     networks:
       - net   
+  api-manager-hm:
+    build: ./dockerfiles/apim
+    volumes:
+      - ./conf/apim-hm:/home/wso2carbon/wso2-config-volume
+    ports:
+      - "9443:9444"
+      - "8280:8281"
+      - "8243:8244"
+    networks:
+      - net
+   api-manager-ds:
+    build: ./dockerfiles/apim
+    volumes:
+      - ./conf/apim-ds:/home/wso2carbon/wso2-config-volume
+    ports:
+      - "9443:9445"
+      - "8280:8282"
+      - "8243:8245"
+    networks:
+      - net 
   am-analytics-dashboard:
     build: ./dockerfiles/apim-analytics-dashboard
     ports:
